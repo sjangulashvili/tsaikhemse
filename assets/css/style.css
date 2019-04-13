@@ -1,3 +1,109 @@
+
+
+@font-face {
+
+	font-family: caps;
+	src: url(../fonts/caps.ttf);
+}
+
+@font-face {
+
+	font-family: normal;
+	src: url(../fonts/normal-bold.ttf);
+}
+
+* {
+
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+
+	font-family: normal;
+
+}
+
+body{
+
+	max-width: 1084px;
+	margin: 0 auto;
+
+}
+
+
+
+header,ul {
+
+	display: flex;
+	
+}
+
+header	{
+
+	height: 60px;
+
+
+justify-content: space-between;
+align-items: center;
+border: 1px solid red;
+
+
+}
+
+.burger{
+
+
+	display: none;
+}
+
+
+.header_navigation{
+
+
+	width: 214px;
+	justify-content: space-between;
+
+}
+
+
+a{
+	color:  #181818;
+	transition: 300ms color ease;
+	font-family: caps;
+}
+
+
+a:hover {
+	color:  #baDC58;
+	transition: 300ms color ease;
+
+}
+
+
+
+a,h1,h2,h3,address {
+
+font-family: caps;
+
+}
+
+
+.hero {
+
+	width: 100;
+	height: calc(100vh - 60px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+
+
+
+
+
 .ProductList {
 
 display: flex;
