@@ -157,6 +157,10 @@ transition: color 300ms ease, background-color 300ms ease;
     font-size: 10px;
 }
 
+.hero_scroll::after {
+    content: url('../images/down.png');
+    margin-top: 22px;
+}
 
 
 
