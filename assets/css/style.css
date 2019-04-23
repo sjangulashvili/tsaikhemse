@@ -125,7 +125,7 @@ h1 {
 }
 
 
-.hero_a{
+.hero_more{
 	margin-top: 52px;
 	color: #181818;
 	background-color: #BADC58;
@@ -140,7 +140,7 @@ h1 {
 }
 
 
-.hero_a:hover{
+.hero_more:hover{
 
 background-color: #FFFFFF;
 color: #BADC58;
@@ -179,7 +179,7 @@ transition: color 300ms ease, background-color 300ms ease;
 
 .hero_scroll {
     position: absolute;
-    bottom: 20px;
+    bottom: 60px;
 	margin-top: 91px;
     color: #FFFFFF;
     display: flex;
@@ -193,44 +193,89 @@ transition: color 300ms ease, background-color 300ms ease;
     margin-top: 22px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .ProductList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: #fff;
+    position: relative;
+}
 
-display: flex;
-justify-content: center;
 
+.ProductList::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+
+.ProductList_title {
+    text-align: center;
+    width: 100%;
 }
 
 .Product_ul {
-
-display: flex;
-flex-wrap : wrap;
-justify-content:space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
+.Product_li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 29px;
+    box-sizing: border-box;
+}
+
+
+.Product_li img {
+    width: 232px;
+    height: 225px;
+    object-fit: cover;
+    margin-bottom: 46px;
+    padding: 12px;
+}
+
+.Product_li h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #181818;
+    width: 132px;
+    height: 39px;
+    text-align: center;
+
+}
+
+.Product_li p {
+    margin-bottom: 20px;
+    font-size: 10px;
+    color: #535C68;
+    font-family: normal;
+    width: 148px;
+    height: 32px;
+    text-align: center;
+}
+
 
 .Add {
 
-text-decoration: none;
 padding-top: 15px;
 padding-right: 47px;
 padding-bottom: 15px;
 padding-left:  47px;
 border-radius: 10px;
 display: flex;
-width: 70px;
+/*width: 70px;*/
 font-size: 15px;
-text-align: center;
+/*text-align: center;*/
 
 }
 
