@@ -20,7 +20,7 @@
 	list-style: none;
 
 	font-family: normal;
-	/*border: 1px solid red;*/
+/*	border: 1px solid red;*/
 
 }
 
@@ -175,6 +175,8 @@ transition: color 300ms ease, background-color 300ms ease;
 	opacity: .6;
 	z-index: -1;
 
+    height: calc(100vh - 60px);
+
 }
 
 .hero_scroll {
@@ -214,6 +216,17 @@ transition: color 300ms ease, background-color 300ms ease;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
+.ProductList::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
 
 
 .ProductList_title {
@@ -233,6 +246,10 @@ transition: color 300ms ease, background-color 300ms ease;
     align-items: center;
     padding: 29px;
     box-sizing: border-box;
+    
+}
+.Product_li:hover {
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -280,16 +297,94 @@ font-size: 15px;
 }
 
 .Add{
-color: #181818;
-background-color: #BADC58;
+color: #BADC58;
+background-color: #FFFFFF;
 border: 1px solid #BADC58;
 transition: color 300ms ease, background-color 300ms ease;
 
 }
 
 .Add:hover {
-background-color: #FFFFFF;
-color: #BADC58;
+background-color: #BADC58;
+color: #181818;
 border: 1px solid #BADC58;
 transition: color 300ms ease, background-color 300ms ease;
+}
+
+
+footer {
+    height: 500px;
+    padding-top: 123px;
+    padding-bottom: 20px;
+    position: relative;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+footer::before {
+    content: url('../images/basil.png');
+    position: absolute;
+    left: -1000px;
+    top: -320px;
+    z-index: -1;
+/*    width: 300px;
+    height: 200px;*/
+}
+
+footer::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background-color: #181818;
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+}
+
+
+.hero::after {
+    content: url(../images/one.png);
+    position: absolute;
+    bottom: -150px;
+    right: 0;
+}
+.GoogleMap {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 31px;
+}
+
+.AddressTelNumber {
+    
+    background-color: #fff;
+    height: 60px;
+    width: 1086px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #F59A63;
+
+}
+
+.AddressTelNumber address{
+
+    font-size: 14px;
+}
+
+
+.icons {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
