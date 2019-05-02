@@ -20,7 +20,7 @@
 	list-style: none;
 
 	font-family: normal;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 
 }
 
@@ -354,6 +354,7 @@ footer::after {
     position: absolute;
     bottom: -150px;
     right: 0;
+    z-index: 2;
 }
 .GoogleMap {
     border-radius: 20px;
@@ -386,7 +387,7 @@ footer::after {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vh;
+    width: 100%;
     left: 0;
     right: 0;
 
@@ -395,5 +396,7 @@ footer::after {
 
 	height: 20px;
 	width: 20px;
+	/*margin-left: 5px;*/
+	margin-right: 20px;
 
 }
