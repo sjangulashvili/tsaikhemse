@@ -20,7 +20,7 @@
 	list-style: none;
 
 	font-family: normal;
-	/*border: 1px solid red;*/
+	border: 1px solid red;
 
 }
 
@@ -360,13 +360,14 @@ footer::after {
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 31px;
+    width: 100%;
 }
 
 .AddressTelNumber {
     
     background-color: #fff;
     height: 60px;
-    width: 1086px;
+    width: 100%;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -399,4 +400,20 @@ footer::after {
 	/*margin-left: 5px;*/
 	margin-right: 20px;
 
+}
+
+
+@media only screen and (min-width: 0px) {
+    nav{
+        display: none;
+    }
+    nav.mainNav{
+        display: flex;
+    }
+}
+@media only screen and (min-width: 480px) {
+ 
+    nav{
+        display: flex;
+    }
 }
